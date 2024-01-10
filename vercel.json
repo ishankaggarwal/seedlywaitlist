@@ -1,3 +1,4 @@
 {
-    "public": "./seedly-logo.png"
+    "public": "./seedly-logo.png",
+    "version":"2"
 }

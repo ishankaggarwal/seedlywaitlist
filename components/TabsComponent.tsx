@@ -40,13 +40,13 @@ export default function TabsComponent() {
   ];
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-fit flex-col">
       <Tabs
         variant="solid"
         selectedKey={selected}
         onSelectionChange={(key) => setSelected(key as string)}
         items={tabs}
-        className="w-full"
+        className="w-full mb-4"
       >
         {(item) => (
           <Tab key={item.id} className="gap-1">
@@ -57,7 +57,7 @@ export default function TabsComponent() {
           </Tab>
         )}
       </Tabs>
-      <Card>
+      <Card className="w-full">
         <CardBody>
           <Image
             src={tabs.find((tab) => tab.id === selected)?.content || ""}

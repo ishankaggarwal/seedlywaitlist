@@ -3,6 +3,7 @@ import "./globals.css";
 import { Toaster } from "react-hot-toast";
 import { Providers } from "./providers";
 import Footer from "@/components/Footer";
+import Head from "next/head";
 
 export const metadata: Metadata = {
   title: "Seedly",
@@ -17,6 +18,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Head>
+        <link rel="shortcut icon" href="/favicon.png" />
+        <link rel="manifest" href="/manifest.json" />
+      </Head>
       <body>
         <Providers>
           <div>

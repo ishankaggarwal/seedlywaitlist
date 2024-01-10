@@ -50,6 +50,7 @@ function FormComponent() {
           icon: "❌",
         });
         setLoading(false);
+        form.reset();
         return;
       }
 

@@ -22,6 +22,9 @@ function Footer() {
             <MdOutlineMail />
           </Link>
         </div>
+        <div className="mt-10">
+          <Link href="/privacy.html">Privacy Policy</Link>
+        </div>
       </div>
 
       <div className="flex-col text-left">

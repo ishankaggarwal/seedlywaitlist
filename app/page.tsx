@@ -16,7 +16,7 @@ export default function Home() {
               without the grunt work
             </span>
             <p className="pt-5 text-left text-semibold text-gray-400">
-              Use your data room to pull all the info you need for analysis.
+              Use data room to pull all the info you need for analysis.
             </p>
           </div>
           <div className="absolute top-0 right-0 mt-5 sm:mr-5 lg:mr-40">

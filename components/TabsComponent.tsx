@@ -55,7 +55,7 @@ export default function TabsComponent() {
               <span
                 className="font-semibold"
                 style={{
-                  maxWidth: "150px",
+                  maxWidth: "180px",
                   overflow: "hidden",
                   textOverflow: "ellipsis",
                   whiteSpace: "nowrap",

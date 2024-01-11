@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="shortcut icon" href="/favicon.png" />
-        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/favicon.png" sizes="192x192" />
       </Head>
       <body>
         <Providers>

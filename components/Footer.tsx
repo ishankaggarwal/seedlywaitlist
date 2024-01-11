@@ -5,7 +5,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="flex justify-between px-4 md:px-6 bg-gray-800 text-white p-8">
+    <footer className="sm:w-full flex justify-between px-4 md:px-6 bg-gray-800 text-white p-8">
       <div className="flex-col items-start">
         <p className="mb-2">Follow us:</p>
         <div className="flex space-x-4">

@@ -40,7 +40,7 @@ export default function TabsComponent() {
   ];
 
   return (
-    <div className="flex w-fit flex-col">
+    <div className="flex w-full flex-col">
       <Tabs
         variant="solid"
         selectedKey={selected}

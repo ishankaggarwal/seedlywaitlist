@@ -46,14 +46,14 @@ export default function Home() {
         className="flex flex-col text-left sm:pl-30 md:mt-12 mt-6 xl:pl-48 -mb-32"
       >
         <span className="font-bold text-6xl text-left">
-          Get info for analysis
+          Gather data for analysis
         </span>
         <span className="md:inline md:mr-1 lg:inline lg:mr-1"></span>
         <span className="pt-1 font-bold text-6xl text-left">
           in minutes, not weeks
         </span>
         <p className="pt-5 text-semibold text-gray-400 text-left mb-40">
-          Every memo starts with the same tedious research.
+          Every investment memo starts with the same tedious research.
           <span className="md:inline md:mr-1 lg:inline lg:mr-1"></span> <br />
           We pull that data so you can jump into the real work, right away.
         </p>

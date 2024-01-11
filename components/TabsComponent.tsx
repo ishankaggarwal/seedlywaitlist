@@ -52,7 +52,17 @@ export default function TabsComponent() {
           <Tab key={item.id} className="gap-1">
             <div className="flex gap-1 items-center">
               {getIconComponent(item.id)}
-              <span className="font-semibold">{item.label}</span>
+              <span
+                className="font-semibold"
+                style={{
+                  maxWidth: "150px",
+                  overflow: "hidden",
+                  textOverflow: "ellipsis",
+                  whiteSpace: "nowrap",
+                }}
+              >
+                {item.label}
+              </span>
             </div>
           </Tab>
         )}

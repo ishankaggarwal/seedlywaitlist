@@ -64,9 +64,6 @@ function FormComponent() {
           icon: "👏",
         });
       } else {
-        const docRef = await addDoc(collection(db, "users"), {
-          email: values.email,
-        });
         toast.success("You're on the waitlist!", {
           position: "top-right",
         });
@@ -82,16 +79,19 @@ function FormComponent() {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <div className="flex space-x-4">
+      <form
+        onSubmit={form.handleSubmit(onSubmit)}
+        className="w-full sm:max-w-xs md:max-w-sm mx-auto"
+      >
+        <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 w-full">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
-              <FormItem className="sm:max-w-32 md:min-w-60">
+              <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="bg-slate-200 hover:bg-slate-300"
+                    className=" w-full text-center sm:text-left bg-zinc-200 hover:bg-zinc-300 hover:border-zinc-300 transition duration-75 focus:ring-zinc-900"
                     placeholder="Work email"
                     {...field}
                   />
@@ -100,11 +100,13 @@ function FormComponent() {
               </FormItem>
             )}
           />
-          {loading ? (
-            <SyncLoader size={8} color="#000000" />
-          ) : (
-            <Button type="submit">Join waitlist</Button>
-          )}
+          <Button
+            type="submit"
+            disabled={loading}
+            className="font-normal text-zinc-50 bg-zinc-900 hover:bg-zinc-800 focus:hover:ring-zinc-800 disabled:opacity-50 transition duration-75"
+          >
+            Join waitlist
+          </Button>
         </div>
       </form>
     </Form>

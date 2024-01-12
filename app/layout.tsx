@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-zinc-100 text-zinc-900">
         <Providers>
           <div>
             <Toaster />

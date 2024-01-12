@@ -2,12 +2,11 @@ import Link from "next/link";
 import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
 import ReportTabs from "@/components/ReportTabs";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-6 md:gap-9">
-      <section className="flex flex-col items-center gap-12">
+      <section className="flex flex-col items-center gap-12 w-full">
         <div className="flex flex-col items-center gap-6 md:gap-9">
           <Link href="/">
             <Image
@@ -19,13 +18,13 @@ export default function Home() {
             />
           </Link>
           <div className="flex flex-col items-center gap-4 md:gap-6">
-            <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
+            <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.02em] text-center">
               Due diligence
               <br />
               without the grunt work
             </h1>
             <p className="text-center text-[#6F6F77]">
-              Get all the data you need for analysis, just with a data room.
+              Use a data room get all the data you need for analysis.
             </p>
             <WaitlistForm />
           </div>
@@ -41,10 +40,8 @@ export default function Home() {
       </section>
       <section id="getInfo" className="flex flex-col gap-6">
         <div className="flex flex-col items-center gap-4 md:gap-6">
-          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
-            Gather data for analysis
-            <br />
-            in minutes, not weeks
+          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.02em] text-center">
+            Gather data for analysis <br className="hidden sm:inline-block" /> in minutes, not weeks
           </h1>
           <p className="text-center text-[#6F6F77] max-w-[55ch] md:max-w-prose">
             Every investment memo starts with the same tedious research. We pull

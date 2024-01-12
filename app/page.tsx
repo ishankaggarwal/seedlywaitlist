@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-12 p-6 md:p-8 max-w-5xl mx-auto">
+    <main className="flex flex-col gap-8 p-6 md:p-8 max-w-[900px] mx-auto">
       <section className="flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-8">
           <Link href="/">
@@ -25,13 +25,20 @@ export default function Home() {
                 without the grunt work
               </h1>
               <p className="text-center text-[#6F6F77]">
-                Pull all the data you need for analysis, just with a data room.
+                Get all the data you need for analysis, just with a data room.
               </p>
             </div>
             <FormComponent />
           </div>
         </div>
-        <Image src="/hero-image.png" alt="seedly" width={1000} height={1000} />
+        <div className="-mx-[0.8em] md:-mx-[1.3em] xl:md:-mx-[1.75em]">
+          <Image
+            src="/hero-image.png"
+            alt="seedly"
+            width={1000}
+            height={1000}
+          />
+        </div>
       </section>
       <section id="getInfo" className="flex flex-col gap-6">
         <div className="flex flex-col items-center gap-4">

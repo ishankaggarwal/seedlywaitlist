@@ -64,6 +64,9 @@ function FormComponent() {
           icon: "👏",
         });
       } else {
+        await addDoc(collection(db, "users"), {
+          email: values.email,
+        });
         toast.success("You're on the waitlist!", {
           position: "top-right",
         });

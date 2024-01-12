@@ -3,7 +3,7 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="mt-24 pt-6 border-t border-zinc-300">
+    <footer className="mt-24 pt-6 border-t border-[#dadadb]">
       <div className="relative flex justify-between items-center gap-6 ">
         <Image
           src="/logo.svg"

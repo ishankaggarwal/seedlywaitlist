@@ -47,7 +47,7 @@ function Footer() {
 
       <div>
         <Link href="/">
-          <Image src="/seedly-logo.svg" alt="Logo" width={60} height={60} />
+          <Image src="/logo.svg" alt="Logo" width={60} height={60} />
         </Link>
       </div>
     </footer>

@@ -1,59 +1,66 @@
-import FormComponent from "@/components/FormComponent";
-import TabsComponent from "@/components/TabsComponent";
+import WaitlistForm from "@/components/WaitlistForm";
+import PreviewTabs from "@/components/PreviewTabs";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-8 p-6 md:p-8 max-w-[900px] mx-auto">
+    <main className="flex flex-col gap-6 md:gap-9 p-6 md:p-9 max-w-[900px] mx-auto">
       <section className="flex flex-col items-center gap-12">
-        <div className="flex flex-col items-center gap-8">
+        <div className="flex flex-col items-center gap-6 md:gap-9">
           <Link href="/">
             <Image
-              src="/seedly-logo-serif.svg"
-              alt="Logo"
-              width={60}
-              height={60}
-              className="w-9 md:w-10 -rotate-[4deg]"
+              src="/logo.svg"
+              alt="Seedly logo"
+              width={44}
+              height={44}
+              className="w-10 md:w-11 -rotate-[4deg]"
             />
           </Link>
-          <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-col items-center gap-4">
-              <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
-                Due diligence
-                <br />
-                without the grunt work
-              </h1>
-              <p className="text-center text-[#6F6F77]">
-                Get all the data you need for analysis, just with a data room.
-              </p>
-            </div>
-            <FormComponent />
+          <div className="flex flex-col items-center gap-6">
+            <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
+              Due diligence
+              <br />
+              without the grunt work
+            </h1>
+            <p className="text-center text-[#6F6F77]">
+              Get all the data you need for analysis, just with a data room.
+            </p>
+            <WaitlistForm />
           </div>
         </div>
         <div className="-mx-[0.8em] md:-mx-[1.3em] xl:md:-mx-[1.75em]">
           <Image
-            src="/hero-image.png"
-            alt="seedly"
+            src="/hero.png"
+            alt="Illustration of data flowing from a data room through different websites, APIs, and eventually into a written report of all preliminary findings."
             width={1000}
             height={1000}
           />
         </div>
       </section>
       <section id="getInfo" className="flex flex-col gap-6">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-6">
           <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
             Gather data for analysis
             <br />
             in minutes, not weeks
           </h1>
-          <p className="text-center text-[#6F6F77]">
+          <p className="text-center text-[#6F6F77] max-w-prose">
             Every investment memo starts with the same tedious research. We pull
             that data so you can jump into the real work, right away.
           </p>
         </div>
-        <TabsComponent />
+        <PreviewTabs />
       </section>
+      <footer className="flex flex-col gap-6">
+        <div className="flex flex-col items-center gap-8">
+          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center max-w-[16ch]">
+            Fast-track your diligence today
+          </h1>
+          <WaitlistForm />
+        </div>
+        <div className="flex flex-col items-center gap-6"></div>
+      </footer>
     </main>
   );
 }

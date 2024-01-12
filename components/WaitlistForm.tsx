@@ -13,7 +13,6 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
-import SyncLoader from "react-spinners/SyncLoader";
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { db } from "@/firebase-config";
 import toast from "react-hot-toast";
@@ -22,7 +21,7 @@ const formSchema = z.object({
   email: z.string().email(),
 });
 
-function FormComponent() {
+function WaitlistForm() {
   const [loading, setLoading] = useState(false);
 
   const form = useForm<z.infer<typeof formSchema>>({
@@ -94,7 +93,7 @@ function FormComponent() {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="w-full text-center sm:text-left bg-[#e7e7e8] focus:bg-[#e7e7e8] border-[#d8d8d9]  hover:bg-[#e1e1e3]  transition duration-75 focus:ring-zinc-900"
+                    className="w-full text-center sm:text-left bg-[#e7e7e8] focus:bg-[#e7e7e8] border-[#dadadb]  hover:bg-[#e1e1e3]  transition duration-75 focus:ring-zinc-900"
                     placeholder="Work email"
                     {...field}
                   />
@@ -116,4 +115,4 @@ function FormComponent() {
   );
 }
 
-export default FormComponent;
+export default WaitlistForm;

@@ -3,13 +3,13 @@ import Image from "next/image";
 
 function Footer() {
   return (
-    <footer className="relative flex justify-between items-center gap-6 mt-36 pt-9 border-t border-zinc-300">
+    <footer className="relative flex justify-between items-center gap-6 mt-24 md:mt-36 pt-6 border-t border-zinc-300">
       <Image
         src="/logo.svg"
         alt="Seedly logo"
         width={44}
         height={44}
-        className="w-6 md:w-8 -rotate-[4deg]"
+        className="w-7 md:w-9"
       />
       <div className="sm:absolute top-1/2 sm:translate-y-1/2 left-1/2 sm:-translate-x-1/2 flex flex-wrap justify-center gap-x-4">
         <Link href="/privacy.html" className="text-[#6F6F77] text-sm">

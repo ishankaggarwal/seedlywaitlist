@@ -29,16 +29,16 @@ export default function PreviewTabs() {
       icon: <UserIcon className={iconClasses} />,
     },
     {
-      id: "company-profile",
-      label: "Company Profile",
-      image: "/company-profile.png",
-      icon: <BuildingOfficeIcon className={iconClasses} />,
-    },
-    {
       id: "industry-overview",
       label: "Industry Overview",
       image: "/industry-overview.png",
       icon: <ArrowTrendingUpIcon className={iconClasses} />,
+    },
+    {
+      id: "company-profile",
+      label: "Company Profile",
+      image: "/company-profile.png",
+      icon: <BuildingOfficeIcon className={iconClasses} />,
     },
     {
       id: "competitive-landscape",

@@ -22,9 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="bg-zinc-100 text-zinc-900">
         <Providers>
-          <div>
-            <Toaster />
-          </div>
+          <Toaster position="top-center" />
           <div className="p-6 md:p-9 max-w-[900px] mx-auto">
             {children}
             <Footer />

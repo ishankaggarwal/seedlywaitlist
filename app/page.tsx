@@ -8,14 +8,14 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-6 md:gap-9">
       <section className="flex flex-col items-center gap-12">
-        <div className="flex flex-col items-center gap-6 md:gap-9">
+        <div className="flex flex-col items-center gap-9">
           <Link href="/">
             <Image
               src="/logo.svg"
               alt="Seedly logo"
               width={44}
               height={44}
-              className="w-10 md:w-11 -rotate-[4deg]"
+              className="w-11 md:w-12"
             />
           </Link>
           <div className="flex flex-col items-center gap-6">

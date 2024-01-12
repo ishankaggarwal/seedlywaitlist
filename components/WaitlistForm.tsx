@@ -93,7 +93,7 @@ function WaitlistForm() {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className="w-full text-center sm:text-left bg-[#e7e7e8] focus:bg-[#e7e7e8] border-[#dadadb]  hover:bg-[#e1e1e3]  transition focus:ring-zinc-900"
+                    className="h-11 sm:h-10  text-base sm:text-sm w-full text-center sm:text-left bg-[#e7e7e8] focus:bg-[#e7e7e8] border-[#dadadb]  hover:bg-[#e1e1e3]  transition focus:ring-zinc-900"
                     placeholder="Work email"
                     {...field}
                   />
@@ -105,7 +105,7 @@ function WaitlistForm() {
           <Button
             type="submit"
             disabled={loading}
-            className="font-normal bg-zinc-900 hover:bg-zinc-800 focus:hover:ring-zinc-800 disabled:opacity-50 transition"
+            className="text-base sm:text-sm h-11 sm:h-10 font-normal bg-zinc-900 hover:bg-zinc-800 focus:hover:ring-zinc-800 disabled:opacity-50 transition"
           >
             Join waitlist
           </Button>

@@ -41,7 +41,8 @@ export default function Home() {
       <section id="getInfo" className="flex flex-col gap-6">
         <div className="flex flex-col items-center gap-4 md:gap-6">
           <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.02em] text-center">
-            Gather data for analysis <br className="hidden sm:inline-block" /> in minutes, not weeks
+            Gather data for analysis <br className="hidden sm:inline-block" />{" "}
+            in minutes, not weeks
           </h1>
           <p className="text-center text-[#6F6F77] max-w-[55ch] md:max-w-prose">
             Every investment memo starts with the same tedious research. We pull
@@ -52,7 +53,7 @@ export default function Home() {
       </section>
       <section className="flex flex-col gap-6 my-6">
         <div className="flex flex-col items-center gap-8">
-          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center max-w-[16ch]">
+          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.02em] text-center max-w-[16ch]">
             Fast-track your diligence today
           </h1>
           <WaitlistForm />

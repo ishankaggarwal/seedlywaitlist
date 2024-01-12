@@ -18,7 +18,7 @@ export default function Home() {
             />
           </Link>
           <div className="flex flex-col items-center gap-4 md:gap-6">
-            <h1 className="text-4xl xs:text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
+            <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
               Due diligence
               <br />
               without the grunt work

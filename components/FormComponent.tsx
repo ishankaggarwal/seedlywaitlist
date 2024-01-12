@@ -81,7 +81,7 @@ function FormComponent() {
     <Form {...form}>
       <form
         onSubmit={form.handleSubmit(onSubmit)}
-        className="w-full sm:max-w-xs md:max-w-sm mx-auto"
+        className="w-full sm:max-w-xs md:max-w-[385px] mx-auto"
       >
         <div className="flex flex-col sm:flex-row gap-y-2 gap-x-4 w-full">
           <FormField
@@ -91,7 +91,7 @@ function FormComponent() {
               <FormItem className="w-full">
                 <FormControl>
                   <Input
-                    className=" w-full text-center sm:text-left bg-zinc-200 hover:bg-zinc-300 hover:border-zinc-300 transition duration-75 focus:ring-zinc-900"
+                    className="w-full text-center sm:text-left bg-[#e7e7e8] focus:bg-[#e7e7e8] border-[#d8d8d9]  hover:bg-[#e1e1e3]  transition duration-75 focus:ring-zinc-900"
                     placeholder="Work email"
                     {...field}
                   />
@@ -103,7 +103,7 @@ function FormComponent() {
           <Button
             type="submit"
             disabled={loading}
-            className="font-normal text-zinc-50 bg-zinc-900 hover:bg-zinc-800 focus:hover:ring-zinc-800 disabled:opacity-50 transition duration-75"
+            className="font-normal bg-zinc-900 hover:bg-zinc-800 focus:hover:ring-zinc-800 disabled:opacity-50 transition duration-75"
           >
             Join waitlist
           </Button>

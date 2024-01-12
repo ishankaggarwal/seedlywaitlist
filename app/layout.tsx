@@ -25,8 +25,10 @@ export default function RootLayout({
           <div>
             <Toaster />
           </div>
-          {children}
-          <Footer />
+          <div className="p-6 md:p-9 max-w-[900px] mx-auto">
+            {children}
+            <Footer />
+          </div>
         </Providers>
       </body>
     </html>

@@ -1,11 +1,12 @@
+import Link from "next/link";
+import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
 import PreviewTabs from "@/components/PreviewTabs";
-import Image from "next/image";
-import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-6 md:gap-9 p-6 md:p-9 max-w-[900px] mx-auto">
+    <main className="flex flex-col gap-6 md:gap-9">
       <section className="flex flex-col items-center gap-12">
         <div className="flex flex-col items-center gap-6 md:gap-9">
           <Link href="/">
@@ -52,7 +53,7 @@ export default function Home() {
         </div>
         <PreviewTabs />
       </section>
-      <footer className="flex flex-col gap-6">
+      <section className="flex flex-col gap-6 my-6">
         <div className="flex flex-col items-center gap-8">
           <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center max-w-[16ch]">
             Fast-track your diligence today
@@ -60,7 +61,7 @@ export default function Home() {
           <WaitlistForm />
         </div>
         <div className="flex flex-col items-center gap-6"></div>
-      </footer>
+      </section>
     </main>
   );
 }

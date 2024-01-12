@@ -78,37 +78,5 @@ export default function PreviewTabs() {
         </TabsContent>
       ))}
     </Tabs>
-    // <div className="flex flex-col items-center gap-9">
-    //   <Tabs
-    //     variant="light"
-    //     selectedKey={selected}
-    //     onSelectionChange={(key) => setSelected(key as string)}
-    //     items={tabs}
-    //     radius="sm"
-    //     className="grid gap-6"
-    //   >
-    //     {(tab) => (
-    //       <Tab
-    //         key={tab.id}
-    //         className="flex gap-4 items-center flex-wrap roudned px-2 hover:opacity-100 hover:bg-neutral-200 group"
-    //       >
-    //         <div className="flex gap-2 items-center">
-    //           {tab.icon}
-    //           <span className="font-medium whitespace-nowrap text-zinc-900 group-hover:opacity-100">
-    //             {tab.label}
-    //           </span>
-    //         </div>
-    //       </Tab>
-    //     )}
-    //   </Tabs>
-    //   <div className="-mx-[0.7em] sm:-mx-[1.4em] lg:-mx-[1.8em]">
-    //     <Image
-    //       src={tabs.find((tab) => tab.id === selected)?.image || ""}
-    //       alt={`${selected}`}
-    //       width={2000}
-    //       height={2000}
-    //     />
-    //   </div>
-    // </div>
   );
 }

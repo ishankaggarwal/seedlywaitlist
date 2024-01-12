@@ -49,7 +49,7 @@ export default function ReportTabs() {
     {
       id: "public-comparables",
       label: "Public Comparables",
-      image: "/public-comparables.svg",
+      image: "/public-comparables.png",
       icon: <TableCellsIcon className={iconClasses} />,
     },
   ];

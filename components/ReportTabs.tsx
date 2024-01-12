@@ -55,15 +55,21 @@ export default function ReportTabs() {
   ];
 
   return (
-    <Tabs defaultValue={tabs[0]?.id} className="flex flex-col gap-2 items-center">
-      <TabsList className="flex flex-wrap gap-x-2 gap-y-1 h-fit max-w-xl mx-auto">
+    <Tabs
+      defaultValue={tabs[0]?.id}
+      className="flex flex-col gap-2 items-center"
+    >
+      <TabsList className="w-full flex flex-wrap gap-x-2 gap-y-1 h-fit max-w-xl mx-auto">
         {tabs.map((tab) => (
           <TabsTrigger
             value={tab.id}
-            className="flex gap-2 py-2 px-3 rounded-md text-zinc-900 font-medium"
+            className="relative bg-[#eaeaec] sm:bg-transparent w-full sm:w-auto flex justify-between gap-2 py-2 px-3 rounded-md text-zinc-900 font-medium"
           >
             {tab.icon}
-            {tab.label}
+            {/* <span className="text-left absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2"> */}
+            <span className="absolute sm:static top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 sm:translate-x-0 sm:translate-y-0">
+              {tab.label}
+            </span>
           </TabsTrigger>
         ))}
       </TabsList>

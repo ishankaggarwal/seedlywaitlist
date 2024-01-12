@@ -37,12 +37,16 @@ function WaitlistForm() {
     const gmailRegex = /@gmail\.com$/;
     const outlookRegex = /@outlook\.com$/;
     const yahooRegex = /@yahoo\.com$/;
+    const hotmailRegex = /@hotmail\.com$/;
+    const protonmailRegex = /@protonmail\.com$/;
 
     try {
       if (
         gmailRegex.test(values.email) ||
         outlookRegex.test(values.email) ||
-        yahooRegex.test(values.email)
+        yahooRegex.test(values.email) ||
+        hotmailRegex.test(values.email) ||
+        protonmailRegex.test(values.email)
       ) {
         toast.error("Please use your work email!", {
           position: "top-right",

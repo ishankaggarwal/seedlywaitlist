@@ -4,13 +4,13 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 import { ReactElement, useState } from "react";
 import Image from "next/image";
-import { 
-  UserIcon, 
-  BuildingOfficeIcon, 
-  BuildingOffice2Icon, 
-  ArrowTrendingUpIcon, 
-  TableCellsIcon 
-} from "@heroicons/react/20/solid"
+import {
+  UserIcon,
+  BuildingOfficeIcon,
+  BuildingOffice2Icon,
+  ArrowTrendingUpIcon,
+  TableCellsIcon,
+} from "@heroicons/react/20/solid";
 
 interface Tab {
   id: string;

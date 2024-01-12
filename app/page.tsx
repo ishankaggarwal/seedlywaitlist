@@ -7,18 +7,18 @@ export default function Home() {
   return (
     <main className="flex flex-col gap-6 md:gap-9">
       <section className="flex flex-col items-center gap-12 w-full">
-        <div className="flex flex-col items-center gap-6 md:gap-9">
+        <div className="flex flex-col items-center gap-6 xs:gap-7 md:gap-9">
           <Link href="/">
             <Image
               src="/logo.svg"
               alt="Seedly logo"
               width={44}
               height={44}
-              className="w-11 md:w-12"
+              className="w-10 xs:w-11 md:w-12"
             />
           </Link>
           <div className="flex flex-col items-center gap-4 md:gap-6">
-            <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
+            <h1 className="text-4xl xs:text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
               Due diligence
               <br />
               without the grunt work
@@ -40,7 +40,7 @@ export default function Home() {
       </section>
       <section id="getInfo" className="flex flex-col gap-6">
         <div className="flex flex-col items-center gap-4 md:gap-6">
-          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
+          <h1 className="text-4xl xs:text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center">
             Gather data for analysis <br className="hidden sm:inline-block" />{" "}
             in minutes, not weeks
           </h1>
@@ -52,8 +52,8 @@ export default function Home() {
         <ReportTabs />
       </section>
       <section className="flex flex-col gap-6 my-6">
-        <div className="flex flex-col items-center gap-8">
-          <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center max-w-[16ch]">
+        <div className="flex flex-col items-center gap-6 xs:gap-8">
+          <h1 className="text-4xl xs:text-5xl md:text-6xl font-serif tracking-[-0.0175em] text-center max-w-[16ch]">
             Fast-track your diligence today
           </h1>
           <WaitlistForm />

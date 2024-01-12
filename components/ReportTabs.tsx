@@ -73,7 +73,7 @@ export default function ReportTabs() {
         ))}
       </TabsList>
       {tabs.map((tab) => (
-        <TabsContent value={tab.id}>
+        <TabsContent key={tab.id} value={tab.id}>
           <Image
             src={tab.image}
             alt={`Screenshot of the ${tab.label} section Seedly's report`}

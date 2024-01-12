@@ -19,7 +19,7 @@ interface Tab {
   icon: ReactElement;
 }
 
-export default function PreviewTabs() {
+export default function ReportTabs() {
   const iconClasses = "h-5 w-5 shrink-0 text-zinc-700";
   const tabs: Tab[] = [
     {
@@ -55,8 +55,8 @@ export default function PreviewTabs() {
   ];
 
   return (
-    <Tabs defaultValue={tabs[0]?.id} className="flex flex-col gap-3 items-center">
-      <TabsList className="flex flex-wrap gap-x-2 gap-y-2 h-fit max-w-lg mx-auto">
+    <Tabs defaultValue={tabs[0]?.id} className="flex flex-col gap-2 items-center">
+      <TabsList className="flex flex-wrap gap-x-2 gap-y-1 h-fit max-w-xl mx-auto">
         {tabs.map((tab) => (
           <TabsTrigger
             value={tab.id}

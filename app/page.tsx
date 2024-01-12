@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import WaitlistForm from "@/components/WaitlistForm";
-import PreviewTabs from "@/components/PreviewTabs";
+import ReportTabs from "@/components/ReportTabs";
 import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
     <main className="flex flex-col gap-6 md:gap-9">
       <section className="flex flex-col items-center gap-12">
-        <div className="flex flex-col items-center gap-9">
+        <div className="flex flex-col items-center gap-6 md:gap-9">
           <Link href="/">
             <Image
               src="/logo.svg"
@@ -18,7 +18,7 @@ export default function Home() {
               className="w-11 md:w-12"
             />
           </Link>
-          <div className="flex flex-col items-center gap-6">
+          <div className="flex flex-col items-center gap-4 md:gap-6">
             <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
               Due diligence
               <br />
@@ -40,18 +40,18 @@ export default function Home() {
         </div>
       </section>
       <section id="getInfo" className="flex flex-col gap-6">
-        <div className="flex flex-col items-center gap-6">
+        <div className="flex flex-col items-center gap-4 md:gap-6">
           <h1 className="text-5xl md:text-6xl font-serif tracking-[-0.015em] text-center">
             Gather data for analysis
             <br />
             in minutes, not weeks
           </h1>
-          <p className="text-center text-[#6F6F77] max-w-prose">
+          <p className="text-center text-[#6F6F77] max-w-[55ch] md:max-w-prose">
             Every investment memo starts with the same tedious research. We pull
             that data so you can jump into the real work, right away.
           </p>
         </div>
-        <PreviewTabs />
+        <ReportTabs />
       </section>
       <section className="flex flex-col gap-6 my-6">
         <div className="flex flex-col items-center gap-8">

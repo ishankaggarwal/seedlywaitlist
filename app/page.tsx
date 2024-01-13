@@ -24,7 +24,7 @@ export default function Home() {
               without the grunt work
             </h1>
             <p className="text-center text-[#6F6F77]">
-              Use a data room get all the data you need for analysis.
+              Use a data room to get all the data you need for analysis.
             </p>
             <WaitlistForm />
           </div>
